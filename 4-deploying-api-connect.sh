@@ -29,5 +29,3 @@ spec:
   profile: n1xc7.m48
   version: 10.0.5.3
   storageClassName: $storage_class" | oc apply -f -
-
-  # storageClassName: ocs-storagecluster-ceph-rbd
