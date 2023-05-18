@@ -12,7 +12,7 @@ Set of scripts that can be used to help with the installation of the Cloud Pak f
 
 
 - 1-create-catalog.sh           This will enable access to the IBM operator catalog from which the Cloud Pak for Integration operators will be deployed
-                              - Required parameters: None
+  - Required parameters: None
                                                             
 2-install-operator.sh         Install the **Cloud Pak for Integration** operator into the openshift-operators project
                               Required parameters: None
