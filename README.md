@@ -12,47 +12,38 @@ Set of scripts that can be used to help with the installation of the Cloud Pak f
 
 
 1-create-catalog.sh           This will enable access to the IBM operator catalog from which the Cloud Pak for Integration operators will be deployed
-
-                              Required parameters: None
+                              - Required parameters: None
                                                             
 2-install-operator.sh         Install the **Cloud Pak for Integration** operator into the openshift-operators project
-
                               Required parameters: None
                               
 2-install-ace-operator.sh     Install the **IBM App Connect** operator into the openshift-operators project
-
                               Required parameters: None
                               
 2-install-apic-operator.sh    Install the **IBM API Connect** operator into the openshift-operators project
-
                               Required parameters: None
                               
 3-add-pull-secret.sh          Creates a new project called **integration** and adds a secret containing the entitlement key determined early to enable access to the CP4I images
-
                               Required parameters: Single parameter that is the entitlement key obtained previously
                               Example:
                               ./3-add-pull-secret.sh _very-long-key-with-no-spaces_ 
                               
 4-deploying-platform-ui.sh    Installs an instance of the Platform UI into the **integration** project
-
                               Required parameters: Single parameter that is a ReadWriteMany storage class. A list of defined storage classes can be found using the OpenShift UI or running 'oc get sc'
                               Example:
                               ./4-deploying-platform-ui.sh ocs-storagecluster-cephfs
 
 4-deploying-ace-dashboard.sh  Installs an instance of the Integration Dashboard into the **integration** project
-
                               Required parameters: Single parameter that is a ReadWriteMany storage class. A list of defined storage classes can be found using the OpenShift UI or running 'oc get sc'
                               Example:
                               ./4-deploying-ace-dashboard.sh ocs-storagecluster-cephfs
 
 4-deploying-ace-designer.sh   Installs an instance of the Integration Designer into the **integration** project
-
                               Required parameters: Single parameter that is a ReadWriteMany storage class. A list of defined storage classes can be found using the OpenShift UI or running 'oc get sc'
                               Example:
                               ./4-deploying-ace-designer.sh ocs-storagecluster-cephfs
 
 4-deploying-api-connect.sh    Installs an API Management instance into the **integration** project
-
                               Required parameters: Single parameter that is a ReadWriteOnce Block storage class. A list of defined storage classes can be found using the OpenShift UI or running 'oc get sc'
                               Example:
                               ./4-deploying-api-connect.sh ocs-storagecluster-ceph-rbd
