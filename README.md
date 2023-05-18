@@ -43,7 +43,7 @@ Set of scripts that can be used to help with the installation of the Cloud Pak f
   - Creates a new project called **integration** and adds a secret containing the entitlement key determined early to enable access to the CP4I images
   - Required parameters: Single parameter that is the entitlement key obtained previously
 ```
-./3-add-pull-secret.sh _replace-with-entitlement-key_
+./3-add-pull-secret.sh <replace-with-entitlement-key>
 ```
                               
 4-deploying-platform-ui.sh
